@@ -12,7 +12,7 @@
 - CSS-модулі
   - Використання
   - Композиція класів
-  - Бібліотека clsx
+  - Бібліотека [clsx](https://www.npmjs.com/package/clsx)
   - Властивість composes
 - Повторне використання стилів
 - Нормалізація стилів з [modern-normalize](https://www.npmjs.com/package/modern-normalize)
