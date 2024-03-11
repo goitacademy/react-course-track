@@ -1,23 +1,19 @@
-// import toast, { Toaster } from "react-hot-toast";
-// import ArticleList from "../ArticleList/ArticleList";
-// import SearchForm from "../SearchForm/SearchForm";
-// import { fetchArticles } from "../../article-api";
+// import UseMemoExample from "./UseMemoExample";
+// import RefBasics from "./RefBasics";
+// import RefExample from "./RefExample";
+// import TimerRef from "./TimerRef";
+// import LangSwitcher from "./LangSwitcher";
 
 export default function App() {
-  // const [searchQuery, setSearchQuery] = useState("");
-  // const [page, setPage] = useState(1);
-
-  // const [articles, setArticles] = useState([]);
-  // const [isLoading, setIsLoading] = useState(false);
-  // const [error, setError] = useState(false);
-
   return (
     <div>
-      <button>Load more</button>
+      {/* <UseMemoExample /> */}
+      {/* <RefBasics /> */}
+      {/* <RefExample /> */}
+      {/* <TimerRef /> */}
 
-      <p>
-        <b>Loading articles...</b>
-      </p>
+      {/* <LangSwitcher /> */}
+      {/* <p>Selected lang: </p> */}
     </div>
   );
 }
