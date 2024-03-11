@@ -1,9 +1,15 @@
-import Layout from "./Layout/Layout";
+// import LangSwitcher from "./LangSwitcher";
+import Balance from "./Balance";
 
 export default function App() {
   return (
-    <Layout>
-      <h1>Routing in React</h1>
-    </Layout>
+    <div>
+      <h1>Redux</h1>
+
+      <Balance />
+
+      {/* <LangSwitcher />
+      <p>Selected lang: </p> */}
+    </div>
   );
 }
