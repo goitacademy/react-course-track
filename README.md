@@ -1,4 +1,4 @@
-# Заняття 6 - HTTP-запити
+# Заняття 7 - HTTP-запити
 
 - HTTP-запити з Axios
   - https://hn.algolia.com/api (http://hn.algolia.com/api/v1/search)
