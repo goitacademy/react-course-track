@@ -1,6 +1,6 @@
 // import TaskList from "./TaskList/TaskList";
 // import Loader from "./Loader";
-// import Error from './Error/Error'
+// import Error from "./Error/Error";
 
 export default function App() {
   return (
