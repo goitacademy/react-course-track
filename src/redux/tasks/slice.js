@@ -1,29 +1,30 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchTasks, addTask, deleteTask } from "./tasksOps";
+import { logOut } from "../auth/operations";
+import { fetchTasks, addTask, deleteTask } from "./operations";
 
-const slice = createSlice({
+const tasksSlice = createSlice({
   name: "tasks",
   initialState: {
     items: [],
-    loading: false,
+    isLoading: false,
     error: null,
   },
-  extraReducers: (builder) =>
+  extraReducers: (builder) => {
     builder
       .addCase(fetchTasks.pending, (state) => {
-        state.loading = true;
+        state.isLoading = true;
       })
       .addCase(fetchTasks.fulfilled, (state, action) => {
-        state.loading = false;
+        state.isLoading = false;
         state.error = null;
         state.items = action.payload;
       })
       .addCase(fetchTasks.rejected, (state, action) => {
-        state.loading = false;
+        state.isLoading = false;
         state.error = action.payload;
       })
       .addCase(addTask.pending, (state) => {
-        state.loading = true;
+        state.isLoading = true;
       })
       .addCase(addTask.fulfilled, (state, action) => {
         state.isLoading = false;
@@ -31,14 +32,14 @@ const slice = createSlice({
         state.items.push(action.payload);
       })
       .addCase(addTask.rejected, (state, action) => {
-        state.loading = false;
+        state.isLoading = false;
         state.error = action.payload;
       })
       .addCase(deleteTask.pending, (state) => {
-        state.loading = true;
+        state.isLoading = true;
       })
       .addCase(deleteTask.fulfilled, (state, action) => {
-        state.loading = false;
+        state.isLoading = false;
         state.error = null;
         const index = state.items.findIndex(
           (task) => task.id === action.payload.id
@@ -46,15 +47,15 @@ const slice = createSlice({
         state.items.splice(index, 1);
       })
       .addCase(deleteTask.rejected, (state, action) => {
-        state.loading = false;
+        state.isLoading = false;
         state.error = action.payload;
-      }),
+      })
+      .addCase(logOut.fulfilled, (state) => {
+        state.items = [];
+        state.error = null;
+        state.isLoading = false;
+      });
+  },
 });
 
-export default slice.reducer;
-
-export const getTasks = (state) => state.tasks.items;
-
-export const getLoading = (state) => state.tasks.loading;
-
-export const getError = (state) => state.tasks.error;
+export default tasksSlice.reducer;
