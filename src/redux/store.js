@@ -1,11 +1,8 @@
-import { combineReducers, createStore } from "redux";
-import { devToolsEnhancer } from "@redux-devtools/extension";
-import { balanceReducer } from "./balanceSlice";
-import { localeReducer } from "./localeSlice";
+import { configureStore } from "@reduxjs/toolkit";
+import tasksReducer from "./tasksSlice";
 
-const rootReducer = combineReducers({
-  balance: balanceReducer,
-  locale: localeReducer,
+export const store = configureStore({
+  reducer: {
+    tasks: tasksReducer,
+  },
 });
-
-export const store = createStore(rootReducer, devToolsEnhancer());

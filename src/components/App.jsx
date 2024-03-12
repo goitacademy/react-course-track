@@ -1,17 +1,14 @@
-import { useSelector } from "react-redux";
-import LangSwitcher from "./LangSwitcher";
-import Balance from "./Balance";
+// import TaskList from "./TaskList/TaskList";
+// import Loader from "./Loader";
+// import Error from './Error/Error'
 
 export default function App() {
-  const lang = useSelector((state) => state.locale.lang);
-
   return (
     <div>
-      <h1>Redux</h1>
-
-      <Balance />
-      <LangSwitcher />
-      <p>Selected lang: {lang}</p>
+      <h1>HTTP requests with Redux</h1>
+      {/* <Loader>Loading message</Loader> */}
+      {/* <Error>Error message</Error> */}
+      {/* <TaskList items={} /> */}
     </div>
   );
 }
