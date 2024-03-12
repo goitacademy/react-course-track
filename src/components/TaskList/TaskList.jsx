@@ -1,12 +1,12 @@
+import Task from "../Task/Task";
 import css from "./TaskList.module.css";
 
-export default function TaskList({ items }) {
+export default function TaskList() {
   return (
     <ul className={css.list}>
-      {items.map((item) => (
-        <li key={item.id} className={css.listItem}>
-          <p className={css.text}>{item.text}</p>
-          <button>Delete</button>
+      {[].map((task) => (
+        <li key={task.id}>
+          <Task task={task} />
         </li>
       ))}
     </ul>

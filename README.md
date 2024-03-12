@@ -9,7 +9,7 @@
   - Діспатч операції у компоненті при монтуванні
   - Огляд як працює диспатч функій (`redux-thunk`)
 - Оголошення операції через `createAsyncThunk`
-  - Операціі `fetchTasks` та `deleteTask`
+  - Операціі `fetchTasks`, `addTask` та `deleteTask`
   - Діспатч операції у компоненті
   - Обробка результату операції у слайсі (`extraReducers`)
   - Обробка запиту, що завершився з помилкою (`thunkAPI.rejectWithValue`)
