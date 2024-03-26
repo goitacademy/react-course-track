@@ -1,9 +1,9 @@
-import { useSelector } from 'react-redux';
-import { Task } from '../Task/Task';
-import { selectAllTasks } from '../../redux/tasks/selectors';
-import css from './TaskList.module.css';
+import { useSelector } from "react-redux";
+import { Task } from "../Task/Task";
+import { selectAllTasks } from "../../redux/tasks/selectors";
+import css from "./TaskList.module.css";
 
-export const TaskList = () => {
+export default function TaskList() {
   const tasks = useSelector(selectAllTasks);
 
   return (
@@ -15,4 +15,4 @@ export const TaskList = () => {
       ))}
     </ul>
   );
-};
+}

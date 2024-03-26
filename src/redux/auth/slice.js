@@ -9,8 +9,7 @@ const authSlice = createSlice({
     },
     token: null,
     isLoggedIn: false,
-    isRefreshing: false,
   },
 });
 
-export const authReducer = authSlice.reducer;
+export default authSlice.reducer;

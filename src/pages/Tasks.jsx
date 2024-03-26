@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import DocumentTitle from "../components/DocumentTitle";
-import { TaskList } from "../components/TaskList/TaskList";
-import { TaskEditor } from "../components/TaskEditor/TaskEditor";
+import PageTitle from "../components/PageTitle/PageTitle";
+import TaskList from "../components/TaskList/TaskList";
+import TaskEditor from "../components/TaskEditor/TaskEditor";
 import { fetchTasks } from "../redux/tasks/operations";
 import { selectLoading } from "../redux/tasks/selectors";
 
@@ -16,7 +16,7 @@ export default function Tasks() {
 
   return (
     <>
-      <DocumentTitle>Your tasks</DocumentTitle>
+      <PageTitle>Your tasks</PageTitle>
       <TaskEditor />
       <div>{isLoading && "Request in progress..."}</div>
       <TaskList />

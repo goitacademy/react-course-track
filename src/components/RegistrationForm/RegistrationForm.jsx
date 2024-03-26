@@ -1,7 +1,7 @@
 import { Formik, Form, Field } from "formik";
-import css from "./LoginForm.module.css";
+import css from "./RegistrationForm.module.css";
 
-export default function LoginForm() {
+export default function RegistrationForm() {
   const handleSubmit = (values, actions) => {
     console.log(values);
     actions.resetForm();
@@ -10,12 +10,17 @@ export default function LoginForm() {
   return (
     <Formik
       initialValues={{
+        name: "",
         email: "",
-        passsword: "",
+        password: "",
       }}
       onSubmit={handleSubmit}
     >
-      <Form className={css.form} onSubmit={handleSubmit} autoComplete="off">
+      <Form className={css.form} autoComplete="off">
+        <label className={css.label}>
+          Username
+          <Field type="text" name="name" />
+        </label>
         <label className={css.label}>
           Email
           <Field type="email" name="email" />
@@ -24,7 +29,7 @@ export default function LoginForm() {
           Password
           <Field type="password" name="password" />
         </label>
-        <button type="submit">Log In</button>
+        <button type="submit">Register</button>
       </Form>
     </Formik>
   );

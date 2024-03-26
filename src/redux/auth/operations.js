@@ -9,10 +9,7 @@ axios.defaults.baseURL = "https://goit-task-manager.herokuapp.com/";
  *
  * After successful registration, add the token to the HTTP header
  */
-export const register = createAsyncThunk(
-  "auth/register"
-  // async (credentials, thunkAPI) => {}
-);
+export const register = createAsyncThunk("auth/register", async () => {});
 
 /*
  * POST @ /users/login
@@ -20,10 +17,7 @@ export const register = createAsyncThunk(
  *
  * After successful login, add the token to the HTTP header
  */
-export const logIn = createAsyncThunk(
-  "auth/login"
-  // async (credentials, thunkAPI) => {}
-);
+export const logIn = createAsyncThunk("auth/login", async () => {});
 
 /*
  * POST @ /users/logout
@@ -31,7 +25,4 @@ export const logIn = createAsyncThunk(
  *
  * After a successful logout, remove the token from the HTTP header
  */
-export const logOut = createAsyncThunk(
-  "auth/logout"
-  // async (_, thunkAPI) => {}
-);
+export const logOut = createAsyncThunk("auth/logout", async () => {});
