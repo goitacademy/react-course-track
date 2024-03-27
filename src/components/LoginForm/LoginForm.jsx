@@ -11,7 +11,7 @@ export default function LoginForm() {
     <Formik
       initialValues={{
         email: "",
-        passsword: "",
+        password: "",
       }}
       onSubmit={handleSubmit}
     >
