@@ -1,6 +1,6 @@
-import PageTitle from "../components/PageTitle/PageTitle";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
       <PageTitle>
