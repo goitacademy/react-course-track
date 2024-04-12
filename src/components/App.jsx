@@ -3,10 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Layout from "./Layout/Layout";
 
-const HomePage = lazy(() => import("../pages/Home"));
-const RegisterPage = lazy(() => import("../pages/Register"));
-const LoginPage = lazy(() => import("../pages/Login"));
-const TasksPage = lazy(() => import("../pages/Tasks"));
+const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
+const RegisterPage = lazy(() => import("../pages/RegisterPage/RegisterPage"));
+const LoginPage = lazy(() => import("../pages/LoginPage/LoginPage"));
+const TasksPage = lazy(() => import("../pages/TasksPage/TasksPage"));
 
 export default function App() {
   return (
