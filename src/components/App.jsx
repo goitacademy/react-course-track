@@ -11,7 +11,7 @@ export default function App() {
       {/* <TaskForm /> */}
       {/* <Loader>Loading message</Loader> */}
       {/* <Error>Error message</Error> */}
-      {/* <TaskList items={} /> */}
+      {/* <TaskList /> */}
     </Layout>
   );
 }
