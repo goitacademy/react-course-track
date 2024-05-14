@@ -15,7 +15,7 @@ export default function LoginForm() {
       }}
       onSubmit={handleSubmit}
     >
-      <Form className={css.form} onSubmit={handleSubmit} autoComplete="off">
+      <Form className={css.form} autoComplete="off">
         <label className={css.label}>
           Email
           <Field type="email" name="email" />
