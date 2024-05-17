@@ -13,6 +13,6 @@
   - Асинхронність оновлення стану
   - Ізоляція стану
   - [!Підняття стану](./assets/lifting-state.png)
-  - Декілька станів
+  - Декілька станів (зробити ефект toggle з `setIsVisible(!isVisible)`)
   - Оновлення об'єктів
 - [!Воркшоп Article Reader](./assets/reader.png)
