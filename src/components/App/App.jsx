@@ -1,8 +1,9 @@
-// import UseMemoExample from "./UseMemoExample";
+// import UseMemoExample from "../UseMemoExample";
 // import RefBasics from "../RefBasics";
-// import Form from "./Form";
-// import Player from "./Player";
-// import LangSwitcher from "./LangSwitcher";
+// import Form from "../Form";
+// import Player from "../Player";
+import AppHeader from "../AppHeader/AppHeader";
+import LangMessage from "../LangMessage";
 import css from "./App.module.css";
 
 export default function App() {
@@ -12,9 +13,8 @@ export default function App() {
       {/* <RefBasics /> */}
       {/* <Form /> */}
       {/* <Player /> */}
-
-      {/* <LangSwitcher /> */}
-      {/* <p>Selected lang: </p> */}
+      <AppHeader />
+      <LangMessage />
     </div>
   );
 }

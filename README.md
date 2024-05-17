@@ -9,8 +9,7 @@
   - Створення контекста з `createContext`
   - Контекст вибору мови (`langContext`)
   - Компонент `Provider`
-  - Хук `useContext` у `App` та `LangSwitcher`
-  - Кастомний хук `useLang`
+  - Хук `useContext` у `LangMessage` та `LangSwitcher`
   - Кастомний компонент провайдера `LangProvider`
   - Стан та зміна стану у компоненті провайдера `LangProvider`
   - Передача стану та сеттера через контекст

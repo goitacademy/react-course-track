@@ -6,9 +6,11 @@
 export default function LangSwitcher() {
   return (
     <select>
-      <option value="uk">UK</option>
-      <option value="en">EN</option>
-      <option value="pl">PL</option>
+      <option value="uk">Українська</option>
+      <option value="en">English</option>
+      <option value="pl">Polski</option>
+      <option value="es">Española</option>
+      <option value="de">Deutsch</option>
     </select>
   );
 }

@@ -6,16 +6,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-body {
-  background-color: #dadada;
+  background-color: #fafafa;
   color: #1f2023;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1f2023;
-    color: #dadada;
-  }
 }
