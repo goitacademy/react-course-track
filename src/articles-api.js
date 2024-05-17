@@ -2,10 +2,10 @@ import axios from "axios";
 
 axios.defaults.baseURL = "http://hn.algolia.com/api/v1";
 
-// export const fetchArticles = async (searchQuery, page = 1) => {
+// export const fetchArticles = async (topic, page = 1) => {
 //   const response = await axios.get("/search", {
 //     params: {
-//       query: searchQuery,
+//       query: topic,
 //       hitsPerPage: 10,
 //       page,
 //     },
