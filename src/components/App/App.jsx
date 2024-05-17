@@ -1,16 +1,17 @@
 // import UseMemoExample from "./UseMemoExample";
-// import RefBasics from "./RefBasics";
-// import RefExample from "./RefExample";
-// import TimerRef from "./TimerRef";
+// import RefBasics from "../RefBasics";
+// import Form from "./Form";
+// import Player from "./Player";
 // import LangSwitcher from "./LangSwitcher";
+import css from "./App.module.css";
 
 export default function App() {
   return (
-    <div>
+    <div className={css.container}>
       {/* <UseMemoExample /> */}
       {/* <RefBasics /> */}
-      {/* <RefExample /> */}
-      {/* <TimerRef /> */}
+      {/* <Form /> */}
+      {/* <Player /> */}
 
       {/* <LangSwitcher /> */}
       {/* <p>Selected lang: </p> */}
