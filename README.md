@@ -13,7 +13,6 @@
   - Використання
   - Композиція класів
   - Бібліотека [clsx](https://www.npmjs.com/package/clsx)
-  - Властивість composes
 - Повторне використання стилів
 - Нормалізація стилів з [modern-normalize](https://www.npmjs.com/package/modern-normalize)
 - Бібліотека [React Icons](https://react-icons.github.io/react-icons/)
