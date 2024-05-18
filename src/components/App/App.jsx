@@ -1,9 +1,9 @@
-import Layout from "./Layout/Layout";
+import css from "./App.module.css";
 
 export default function App() {
   return (
-    <Layout>
+    <div className={css.container}>
       <h1>Routing in React</h1>
-    </Layout>
+    </div>
   );
 }
