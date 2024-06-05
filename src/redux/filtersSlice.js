@@ -16,4 +16,4 @@ export const { changeTextFilter } = filtersSlice.actions;
 
 export default filtersSlice.reducer;
 
-export const getTextFilter = (state) => state.filters.text;
+

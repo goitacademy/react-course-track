@@ -1,12 +1,10 @@
 import { useSelector } from "react-redux";
 import Task from "../Task/Task";
-import { getTasks } from "../../redux/tasksSlice";
-import { getTextFilter } from "../../redux/filtersSlice";
 import css from "./TaskList.module.css";
 
 export default function TaskList() {
-  const tasks = useSelector(getTasks);
-  const textFilter = useSelector(getTextFilter);
+  const tasks = useSelector(state => state.tasks.items);
+  const textFilter = useSelector(state => state.filters.text);
 
   const visibleTasks = tasks.filter((task) =>
     task.text.toLowerCase().includes(textFilter.toLowerCase())

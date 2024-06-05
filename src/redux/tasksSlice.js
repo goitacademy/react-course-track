@@ -11,6 +11,7 @@ const slice = createSlice({
   extraReducers: (builder) =>
     builder
       .addCase(fetchTasks.pending, (state) => {
+        state.error = null;
         state.loading = true;
       })
       .addCase(fetchTasks.fulfilled, (state, action) => {
@@ -23,6 +24,7 @@ const slice = createSlice({
         state.error = action.payload;
       })
       .addCase(addTask.pending, (state) => {
+        state.error = null;
         state.loading = true;
       })
       .addCase(addTask.fulfilled, (state, action) => {
@@ -35,15 +37,13 @@ const slice = createSlice({
         state.error = action.payload;
       })
       .addCase(deleteTask.pending, (state) => {
+        state.error = null;
         state.loading = true;
       })
       .addCase(deleteTask.fulfilled, (state, action) => {
         state.loading = false;
-        state.error = null;
-        const index = state.items.findIndex(
-          (task) => task.id === action.payload.id
-        );
-        state.items.splice(index, 1);
+
+        state.items = state.items.filter(item => item.id !== action.payload.id);
       })
       .addCase(deleteTask.rejected, (state, action) => {
         state.loading = false;
@@ -52,9 +52,3 @@ const slice = createSlice({
 });
 
 export default slice.reducer;
-
-export const getTasks = (state) => state.tasks.items;
-
-export const getLoading = (state) => state.tasks.loading;
-
-export const getError = (state) => state.tasks.error;
