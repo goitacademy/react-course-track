@@ -8,7 +8,7 @@
 - Створення проекту
   - [Vite](https://vitejs.dev/)
   - Налаштування ESLint (`react/prop-types: 0`)
-- Інструменти розробника (React DevTools)
+- [Інструменти розробника](https://react.dev/learn/react-developer-tools#browser-extension)
 - Компоненти
   - Дефолтний імпорт та експорт
 - JSX - опис UI
