@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
 import Layout from "./Layout/Layout";
 
 const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
@@ -19,7 +18,6 @@ export default function App() {
           <Route path="/tasks" element={<TasksPage />} />
         </Routes>
       </Suspense>
-      <Toaster />
     </Layout>
   );
 }
