@@ -6,13 +6,13 @@
   - Посилання на функцію
   - Анонімний колбек
   - Об'єкт події
-- [!Стан компонента](./assets/state.png)
+- [!Стан компонента](https://raw.githubusercontent.com/goitacademy/react-course-track/03-state/assets/state.png)
   - Реактивність
   - Хук `useState`
   - Обмеження хуків
   - Асинхронність оновлення стану
   - Ізоляція стану
-  - [!Підняття стану](./assets/lifting-state.png)
+  - [!Підняття стану](https://raw.githubusercontent.com/goitacademy/react-course-track/03-state/assets/lifting-state.png)
   - Декілька станів (зробити ефект toggle з `setIsVisible(!isVisible)`)
   - Оновлення об'єктів
-- [!Воркшоп Article Reader](./assets/reader.png)
+- [!Воркшоп Article Reader](https://raw.githubusercontent.com/goitacademy/react-course-track/03-state/assets/reader.png)
