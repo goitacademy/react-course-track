@@ -1,11 +1,12 @@
-import { useState } from "react";
+// import { useState } from "react";
 // import ClickTracker from "../ClickTracker/ClickTracker";
-// import Timer from "../Timer/Timer";
+// import Sidebar from "../Sidebar/Sidebar";
+// import Timer from "../Timer";
 // import articles from "../../articles.json";
 import css from "./App.module.css";
 
 export default function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <div className={css.container}>
@@ -13,10 +14,10 @@ export default function App() {
 
       {/* <ClickTracker /> */}
 
-      {/* <button onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? "Close" : "Open"}
-      </button>
-      {isOpen && <Timer />} */}
+      {/* <button>Open sidebar</button>
+      {isSidebarOpen && <Sidebar />} */}
+
+      {/* <Timer /> */}
     </div>
   );
 }

@@ -4,6 +4,14 @@
  * - Очистити інтервал при розмонтуванні
  */
 
+import { useState } from "react";
+
 export default function Timer() {
-  return <div>Timer</div>;
+  const [date, setDate] = useState(new Date());
+
+  return (
+    <div>
+      <b>{date.toLocaleTimeString()}</b>
+    </div>
+  );
 }
