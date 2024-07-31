@@ -1,29 +1,30 @@
 # Заняття 11 - Бібліотека Redux
 
 - Управління станом
-  - Глобальний стан
-  - Потік даних
-- Встановлення Redux та React Redux
+  - Глобальний стан та потік даних
+- Встановлення
+  - [Redux Toolkit](https://redux-toolkit.js.org/)
+  - [React Redux](https://react-redux.js.org/)
 - Стор (store)
-  - Redux DevTools
+  - Додавання [Redux DevTools](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+  - Функція `configureStore`
 - Підписка на стор
   - Хук `useSelector`
   - Функції-селектори
 - Екшени (actions)
-  - Генератори екшенів
-  - Відправлення екшенів
-  - Хук `useDispatch`
+  - Фабрики екшенів
+  - Функція `createAction`
+  - Відправлення екшенів з `useDispatch`
 - Редюсери (reducers)
-  - Що таке редюсер
   - Сігнатура редюсера
   - Кореневий редюсер
   - Чому за замовчуванням `return state`
   - Обробка екшенів
-  - Композиція редюсерів
+  - Редюсери слайсів
 
 ## Redux example
 
-![UI завдання](./assets/task.gif)
+![UI завдання](https://raw.githubusercontent.com/goitacademy/react-course-track/11-redux/assets/task.gif)
 
 Так має виглядати початковий стан:
 
