@@ -13,6 +13,7 @@
   - Асинхронність оновлення стану
   - Ізоляція стану
   - [Підняття стану](https://raw.githubusercontent.com/goitacademy/react-course-track/03-state/assets/lifting-state.png)
+    - Компоненти `Counter` та `CountDisplay`
   - Декілька станів (зробити ефект toggle з `setIsVisible(!isVisible)`)
   - Оновлення об'єктів
 - [Воркшоп Article Reader](https://raw.githubusercontent.com/goitacademy/react-course-track/03-state/assets/reader.png)
