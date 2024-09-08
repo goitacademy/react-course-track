@@ -6,8 +6,8 @@
   - [Redux Toolkit](https://redux-toolkit.js.org/)
   - [React Redux](https://react-redux.js.org/)
 - Стор (store)
-  - Додавання [Redux DevTools](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
   - Функція `configureStore`
+  - Розбір Redux Devtools
 - Підписка на стор
   - Хук `useSelector`
   - Функції-селектори
@@ -20,7 +20,6 @@
   - Кореневий редюсер
   - Чому за замовчуванням `return state`
   - Обробка екшенів
-  - Редюсери слайсів
 
 ## Redux example
 
