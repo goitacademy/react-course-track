@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Redux</h1>
+      <h1>State management with Redux</h1>
 
       <Balance />
       <LangSwitcher />
