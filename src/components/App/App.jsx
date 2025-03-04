@@ -1,4 +1,4 @@
-import UserForm from "./UserForm/UserForm";
+import UserForm from '../UserForm/UserForm';
 import css from "./App.module.css";
 
 export default function App() {
