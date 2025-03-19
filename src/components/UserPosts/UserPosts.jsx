@@ -1,6 +1,8 @@
 import styles from './UserPosts.module.css';
 
-export default function UserPosts({ posts }) {
+export default function UserPosts() {
+    const posts = [];
+    
     return (
         <div className={styles.container}>
             <h3 className={styles.header}>User Posts</h3>

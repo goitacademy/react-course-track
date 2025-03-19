@@ -1,6 +1,8 @@
 import styles from './UserTodos.module.css';
 
-export default function UserTodos({ todos }) {
+export default function UserTodos() {
+    const todos = [];
+    
     return (
         <div className={styles.container}>
             <h2 className={styles.header}>User Todos</h2>
