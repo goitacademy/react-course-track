@@ -1,38 +1,60 @@
-import { useState } from "react";
-import { FaTshirt } from "react-icons/fa";
-import css from "./OrderForm.module.css";
-
-const initialValues = {
-  size: "md",
-  color: "blue",
-};
+import css from './OrderForm.module.css';
 
 export default function OrderForm() {
-  const [state, setState] = useState(initialValues);
-
   return (
-    <form autoComplete="off" noValidate className={css.form}>
-      <FaTshirt size="160" color={state.color} />
+    <form className={css.form}>
+      <fieldset className={css.fieldset}>
+        <legend className={css.legend}>Client info:</legend>
+        <label className={css.label}>Name</label>
+        <input type='text' name='username' />
 
-      <div className={css.group}>
-        <label>Size</label>
-        <select name="size">
-          <option value="sm">Small</option>
-          <option value="md">Medium</option>
-          <option value="lg">Large</option>
-        </select>
-      </div>
+        <label className={css.label}>Email</label>
+        <input type='email' name='email' />
+      </fieldset>
 
-      <div className={css.group}>
-        <label>Color</label>
-        <select name="color">
-          <option value="red">Red</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-        </select>
-      </div>
+      <fieldset className={css.fieldset}>
+        <legend className={css.legend}>Delivery method:</legend>
+        <label className={css.option}>
+          <input type='radio' name='delivery' value='pickup' defaultChecked />
+          Pickup
+        </label>
+        <label className={css.option}>
+          <input type='radio' name='delivery' value='courier' />
+          Courier
+        </label>
+        <label className={css.option}>
+          <input type='radio' name='delivery' value='drone' />
+          Drone delivery
+        </label>
+      </fieldset>
 
-      <button type="submit">Submit</button>
+      <fieldset className={css.fieldset}>
+        <legend className={css.legend}>Dietary restrictions:</legend>
+        <label className={css.option}>
+          <input type='checkbox' name='restrictions' value='vegan' />
+          Vegan
+        </label>
+        <label className={css.option}>
+          <input type='checkbox' name='restrictions' value='gluten-free' />
+          Gluten-free
+        </label>
+        <label className={css.option}>
+          <input type='checkbox' name='restrictions' value='nut-free' />
+          Nut-free
+        </label>
+      </fieldset>
+
+      <label className={css.label}>Preferred delivery time</label>
+      <select name='deliveryTime' defaultValue='' className={css.input}>
+        <option value=''>-- Choose delivery time --</option>
+        <option value='morning'>Morning (8:00-12:00)</option>
+        <option value='afternoon'>Afternoon (12:00-16:00)</option>
+        <option value='evening'>Evening (16:00-20:00)</option>
+      </select>
+
+      <button type='submit' className={css.button}>
+        Place order
+      </button>
     </form>
   );
 }
