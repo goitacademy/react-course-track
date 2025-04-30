@@ -1,15 +1,18 @@
-import UserForm from '../UserForm/UserForm';
-import css from "./App.module.css";
+import { useState } from 'react';
+import OrderForm from '../OrderForm/OrderForm';
+import css from './App.module.css';
 
 export default function App() {
-  const addUser = (newUser) => {
-    console.log(newUser);
+  const [orders, setOrders] = useState([]);
+
+  const addNewOrder = (newOrder) => {
+    setOrders((prevOrders) => [...prevOrders, newOrder]);
   };
 
   return (
     <div className={css.container}>
-      <h1>Forms with Formik</h1>
-      <UserForm onAdd={addUser} />
+      <OrderForm onSubmit={addNewOrder} />
+      <pre>{JSON.stringify(orders, null, 2)}</pre>
     </div>
   );
 }
